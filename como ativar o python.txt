@@ -1,0 +1,20 @@
+py --list
+py -3.11 -m venv venv
+venv\Scripts\activate
+pip install flask opencv-python mediapipe==0.10.14 numpy pillow
+python app.py
+ sempre que for rodar dnv 
+
+venv\Scripts\activate
+python app.py
+
+antes de desistir tenta isso aqui 
+
+python --version
+rmdir /s /q venv
+py -3.11 -m venv venv
+venv\Scripts\activate
+python -m pip install --upgrade pip setuptools wheel
+pip install mediapipe
+pip install flask opencv-python numpy pillow
+python app.py

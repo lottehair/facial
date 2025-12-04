@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Lotte — Diagnóstico Facial (v2.0)</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='lotte.png') }}" alt="Logo Lotte">
+    </div>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="/Diagnostico/diagnostico.html">Diagnóstico Online</a></li>
+            <li><a href="/">Facial</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Kits</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="/bancos/admin.html">Admin</a></li>
+            <li><a href="/Sobre/sobre.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <div class="icons">
+        <a href="/Busca/busca.html" class="icon">
+            <img class="busca" src="{{ url_for('static', filename='busca.png') }}" alt="Busca">
+        </a>
+
+        <a href="/Favoritos/favoritos.html" class="icon">
+            <img class="favoritos" src="{{ url_for('static', filename='favoritos.png') }}" alt="Favoritos">
+        </a>
+
+        <a href="/bancos/public/login.html" class="icon">
+            <img class="conta" src="{{ url_for('static', filename='conta.png') }}" alt="Conta">
+        </a>
+
+        <a href="/Carrinho/carrinho.html" class="icon">
+            <img class="carrinho" src="{{ url_for('static', filename='3.png') }}" alt="Carrinho">
+        </a>
+
+        <button class="hamburger">☰</button>
+    </div>
+</header>
+
+<main>
+    <div class="title">
+        <h1>Descubra seu formato de rosto</h1>
+        <p>Envie uma foto ou tire agora mesmo — veja a malha de pontos, medidas e cortes recomendados.</p>
+    </div>
+
+    <section class="quiz-container container">
+        <form id="mainForm" onsubmit="return false;">
+
+            <div class="field-row">
+                <label for="genero">Como você se identifica?</label>
+                <select id="genero" name="genero">
+                    <option value="nao_informar">Prefiro não informar</option>
+                    <option value="feminino">Mulher</option>
+                    <option value="masculino">Homem</option>
+                </select>
+            </div>
+
+            <div class="field-row">
+                <label for="file">Enviar foto (arquivo):</label>
+                <input type="file" id="file" name="file" accept="image/*">
+            </div>
+
+            <div class="camera-area">
+                <video id="video" autoplay playsinline></video>
+                <canvas id="canvas" style="display:none;"></canvas>
+
+                <img id="preview" class="preview hidden" alt="Pré-visualização da foto">
+
+                <div class="camera-controls">
+                    <button id="openCamera" type="button">Abrir câmera</button>
+                    <button id="capture" type="button" disabled>Tirar foto</button>
+                    <button id="retake" type="button" style="display:none;">Refazer foto</button>
+                    <button id="closeCamera" type="button" style="display:none;">Fechar câmera</button>
+                </div>
+            </div>
+
+            <div class="actions">
+                <!-- ❗ Botão restaurado corretamente -->
+                <button id="analyzeBtn" type="button">Analisar rosto</button>
+            </div>
+
+        </form>
+
+        <div id="loader" class="loader hidden">
+            <div class="spinner"></div>
+            <p>Analisando rosto...</p>
+        </div>
+
+        <section id="result" class="resultado hidden">
+            <h2>Resultado</h2>
+
+            <div class="result-row">
+                <div class="img-result">
+                    <img id="overlayImg" alt="Rosto com malha">
+                </div>
+
+                <div class="info-result">
+                    <h3>Informações</h3>
+
+                    <p id="formatText"><strong>Formato:</strong> —</p>
+                    <p id="measuresText"><strong>Medidas (px):</strong> —</p>
+
+                    <div id="recs"></div>
+                </div>
+            </div>
+
+            <div id="cutsArea" class="hidden">
+                <h3>Cortes recomendados</h3>
+                <div id="cutsGallery" class="gallery"></div>
+            </div>
+
+            <div style="margin-top:12px;">
+                <button onclick="location.reload()">↩ Nova análise</button>
+            </div>
+        </section>
+    </section>
+</main>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

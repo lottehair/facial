@@ -1,0 +1,67 @@
+{
+    "feminino": {
+      "oval": [
+        {"img": "static/cuts/feminino/oval/oval1.jpg", "nome": "Long Bob Repicado", "descricao": "Versátil; mantém harmonia do rosto oval."},
+        {"img": "static/cuts/feminino/oval/oval2.jpg", "nome": "Camadas Suaves", "descricao": "Cria movimento sem alongar demais."},
+        {"img": "static/cuts/feminino/oval/oval3.jpg", "nome": "Franja Lateral", "descricao": "Destaca olhos e suaviza a testa."}
+      ],
+      "redondo": [
+        {"img": "static/cuts/feminino/redondo/red1.jpg", "nome": "Long Layers", "descricao": "Alongam visualmente o rosto."},
+        {"img": "static/cuts/feminino/redondo/red2.jpg", "nome": "Long Bob", "descricao": "Alongamento vertical sem perder volume."},
+        {"img": "static/cuts/feminino/redondo/red3.jpg", "nome": "Franja Desfiada", "descricao": "Evita largura excessiva nas bochechas."}
+      ],
+      "quadrado": [
+        {"img": "static/cuts/feminino/quadrado/quad1.jpg", "nome": "Ondas soltas", "descricao": "Suaviza linhas de maxilar marcadas."},
+        {"img": "static/cuts/feminino/quadrado/quad2.jpg", "nome": "Corte em camadas", "descricao": "Torna visualmente mais leve."},
+        {"img": "static/cuts/feminino/quadrado/quad3.jpg", "nome": "Franja lateral", "descricao": "Quebra a rigidez do maxilar."}
+      ],
+      "coracao": [
+        {"img": "static/cuts/feminino/coracao/c1.jpg", "nome": "Corte médio", "descricao": "Equilibra testa larga com queixo fino."},
+        {"img": "static/cuts/feminino/coracao/c2.jpg", "nome": "Franja lateral longa", "descricao": "Suaviza a testa."},
+        {"img": "static/cuts/feminino/coracao/c3.jpg", "nome": "Bob com volume lateral", "descricao": "Aumenta a presença nas laterais."}
+      ],
+      "losango": [
+        {"img": "static/cuts/feminino/losango/l1.jpg", "nome": "Camadas com volume", "descricao": "Destaca maçãs do rosto sem pesar."},
+        {"img": "static/cuts/feminino/losango/l2.jpg", "nome": "Franja leve", "descricao": "Suaviza o contorno superior."},
+        {"img": "static/cuts/feminino/losango/l3.jpg", "nome": "Corte médio texturizado", "descricao": "Ilumina o rosto mantendo balanço."}
+      ],
+      "triangular": [
+        {"img": "static/cuts/feminino/triangular/t1.jpg", "nome": "Camadas respingadas", "descricao": "Aumenta a parte superior para equilibrar."},
+        {"img": "static/cuts/feminino/triangular/t2.jpg", "nome": "Franja lateral", "descricao": "Ajuda a suavizar o queixo estreito."},
+        {"img": "static/cuts/feminino/triangular/t3.jpg", "nome": "Corte em V suave", "descricao": "Distribui o volume no comprimento."}
+      ]
+    },
+    "masculino": {
+      "oval": [
+        {"img": "static/cuts/masculino/oval/o1.jpg", "nome": "Degradê clássico", "descricao": "Mantém a versatilidade do rosto oval."},
+        {"img": "static/cuts/masculino/oval/o2.jpg", "nome": "Texturizado no topo", "descricao": "Cria movimento sem alongar demais."},
+        {"img": "static/cuts/masculino/oval/o3.jpg", "nome": "Corte curto penteado", "descricao": "Visual elegante e fácil de manter."}
+      ],
+      "redondo": [
+        {"img": "static/cuts/masculino/redondo/r1.jpg", "nome": "Pompadour", "descricao": "Gera altura no topo e afina o rosto."},
+        {"img": "static/cuts/masculino/redondo/r2.jpg", "nome": "Fade alto", "descricao": "Contrasta laterais e alonga."},
+        {"img": "static/cuts/masculino/redondo/r3.jpg", "nome": "Topete texturizado", "descricao": "Construção de volume vertical."}
+      ],
+      "quadrado": [
+        {"img": "static/cuts/masculino/quadrado/q1.jpg", "nome": "Degradê baixo", "descricao": "Suaviza ângulos marcados."},
+        {"img": "static/cuts/masculino/quadrado/q2.jpg", "nome": "Corte curto texturizado", "descricao": "Valoriza o maxilar forte."},
+        {"img": "static/cuts/masculino/quadrado/q3.jpg", "nome": "Franja curta", "descricao": "Quebra a horizontalidade do rosto."}
+      ],
+      "coracao": [
+        {"img": "static/cuts/masculino/coracao/c1.jpg", "nome": "Franja curta estilizada", "descricao": "Ajuda a equilibrar testa larga."},
+        {"img": "static/cuts/masculino/coracao/c2.jpg", "nome": "Topete suave", "descricao": "Textura que diminui foco na testa."},
+        {"img": "static/cuts/masculino/coracao/c3.jpg", "nome": "Corte curto lateral", "descricao": "Harmonia entre laterais e topo."}
+      ],
+      "losango": [
+        {"img": "static/cuts/masculino/losango/l1.jpg", "nome": "Texturizado médio", "descricao": "Arredonda as maçãs do rosto."},
+        {"img": "static/cuts/masculino/losango/l2.jpg", "nome": "Corte com franja lateral", "descricao": "Diminui destaque das maçãs do rosto."},
+        {"img": "static/cuts/masculino/losango/l3.jpg", "nome": "Fade com topo longo", "descricao": "Ajusta proporções verticalmente."}
+      ],
+      "triangular": [
+        {"img": "static/cuts/masculino/triangular/t1.jpg", "nome": "Volume no topo", "descricao": "Equilibra queixo estreito."},
+        {"img": "static/cuts/masculino/triangular/t2.jpg", "nome": "Laterais curtas", "descricao": "Compensa a largura inferior."},
+        {"img": "static/cuts/masculino/triangular/t3.jpg", "nome": "Corte texturizado", "descricao": "Cria ilusão de largura no topo."}
+      ]
+    }
+  }
+  
